@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>使用Nodejs实现实时推送MySQL数据库最新信息到客户端</title>
+    <style>
+        dd,dt {
+            float:left;
+            margin:0;
+            padding:5px;
+            clear:both;
+            display:block;
+            width:100%;
+        }
+        dt {
+            background:#ddd;
+        }
+        time {
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+<time></time>
+<div id="container">Loading ...</div>
+<script src="socket.io/socket.io.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+    // 创建websocket连接
+    var socket = io.connect('http://127.0.0.1:8080');
+    // 把信息显示到div上
+    socket.on('notification', function (data) {
+        var articlesList = "<dl>";
+        $.each(data.articles,function(index,article){
+            articlesList += "<dt>" + article.airline + "</dt>\n" +
+                "<dd>" + article.flightNum + "\n" +
+                "<dd>" + article.flightDetail + "\n"
+            "</dd>";
+        });
+        articlesList += "</dl>";
+        $('#container').html(articlesList);
+
+        $('time').html('最后更新时间:' + data.time);
+    });
+</script>
+</body>
+</html>

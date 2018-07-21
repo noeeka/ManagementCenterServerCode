@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Map - edit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ManagementCenterServer">
+    <meta name="keywords" content="mcs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if (gt IE 9)]><!-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css"><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <link rel="stylesheet" type="text/css" href="./assets/css/app-ie.css"><![endif]--> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/froala_editor.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/wave.css">
+  </head>
+  <body>
+    <div data-state="string_mapEdit" class="c-menu">
+      <div class="c-folding"><img src="./assets/img/nav_icon_humberg2.png" alt="humberg"/></div>
+      <div class="c-menu__content">
+        <ul class="c-menu__content--parent">
+          <li class="c-menu__single"><a href="./index.html">
+              <div class="menu_img menu_homepage"></div>
+              <p data-lang="string_homepage"></p></a></li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_commu"></div>
+              <p data-lang="string_communication"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_communication"></p>
+              </li>
+              <li class="c-permission c-permission__intercom"><a href="./intercom_call.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_intercom_btn"></p></a></li>
+              <li class="c-permission c-permission__intercom"><a href="./monitor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_monitoring"></p></a></li>
+              <li class="c-permission c-permission__notice"><a href="./notice_image.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_announcement"></p></a></li>
+              <li class="c-permission c-permission__message"><a href="./message_send.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_message_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild c-permission c-permission__bookingDetail"><a>
+              <div class="menu_img menu_booking"></div>
+              <p data-lang="string_booking"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_booking"></p>
+              </li>
+              <li><a href="./booking_venues_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingSite"></p></a></li>
+              <li><a href="./booking_activity_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingActivities"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_data"></div>
+              <p data-lang="string_basic"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_basic"></p>
+              </li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_buildingInfo"></p></a></li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_indoor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_equipment"></p></a></li>
+              <li class="c-permission c-permission__super"><a href="./sip_group.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_sipServer"></p></a></li>
+              <li class="c-permission c-permission__infoSearch"><a href="./search_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_searchingData"></p></a></li>
+              <li class="c-permission c-permission__online"><a href="./online_testing.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_jiance_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__single c-permission c-permission__alarm"><a href="./defense_record.html">
+              <div class="menu_img menu_security"></div>
+              <p data-lang="string_security"></p></a></li>
+          <li class="c-menu__hasChild c-permission c-permission__super"><a>
+              <div class="menu_img menu_more"></div>
+              <p data-lang="string_more"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_more"></p>
+              </li>
+              <li><a href="./user_position.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_managementId"></p></a></li>
+              <li><a href="./device_management.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_deviceManagement"></p></a></li>
+              <li><a href="./backup_restore.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_backup"></p></a></li>
+              <li class="c-permission"><a href="./map_edit.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_mapEdit"></p></a></li>
+              <li><a href="./setting_local.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_setting"></p></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="c-content__right c-permission__page--super">
+      <div class="c-levelNav first-child">
+        <ul>
+          <li><a data-lang="string_mapEdit"></a></li>
+        </ul>
+      </div>
+      <div id="map_edit" class="c-content c-mapEdit">
+        <div class="c-mapEdit__left">
+          <div id="moveMap" ondrop="drop1(event)" ondragover="allowDrop(event)" class="c-mapEdit__image"></div>
+          <div class="c-mapEdit__update"><img src="./assets/img/map_upload.png" alt="upload map"><span data-lang="string_uploadMap"></span></div>
+        </div>
+        <div class="c-mapEdit__right">
+          <div class="c-mapEdit__right--notEdit">
+            <div data-lang="string_editMap" class="button button--orange"></div>
+            <div data-lang="string_uploadMap" class="button button--white"></div>
+            <input id="uploadMap" type="file" name="files[]" style="display: none">
+            <div style="display: none; width:200px; margin-left:20px;background-color:transparent" class="progress">
+              <div style="width: 100%;margin-top: 10px;height: 10px;background: #45547f;border-radius: 15px;" class="bar"> </div>
+              <div style="margin-top:10px;" class="upstatus"></div>
+            </div>
+          </div>
+          <div class="c-mapEdit__right--edit">
+            <p data-lang="string_pleasedrop"></p>
+            <div id="canotMoveMap" ondrop="drop2(event)" ondragover="allowDrop(event)" class="c-mapEdit__icons"></div>
+            <div class="c-mapEdit__editBtn">
+              <div data-lang="string_submit" class="button button--orange"></div>
+              <div data-lang="string_cancel" class="button button--white"></div>
+            </div>
+          </div>
+        </div>
+        <div id="popup__error" class="c-popup">
+          <div class="c-popup__content">
+            <div style="margin-bottom: 10px" class="c-popup__content--nav">
+              <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+            </div>
+            <div class="c-booking__errorPopup">
+              <h2 data-lang="string_text47"></h2>
+              <div data-lang="string_text8" class="button button--white f-close"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include ./_footer--><!--[if (gt IE 9)]><!-->
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.cookie.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.i18n.properties.min.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.iframe-transport.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.fileupload.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/wave.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/mqttws.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/qwebchannel.js" type="text/javascript"></script><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <script src="./assets/js/vendor/old-ie/jquery-1.9.0.js"></script>
+    <script src="./assets/js/vendor/old-ie/html5shiv.js"></script>
+    <script src="./assets/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->
+    <script src="./assets/js/vendor.min.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+    <script src="./assets/js/app.min.js" type="text/javascript"></script>
+    <script src="./assets/js/ajax.js" type="text/javascript"></script>
+  </body>
+  <script>
+    $('.c-mapEdit__right--notEdit .button--orange').click(function(){
+      if ($(this).hasClass('disabled')) {
+        return false
+      }else{
+        $('.c-mapEdit__right').addClass('is-active')
+        $('#moveMap div').attr('draggable', 'true')
+        $('.c-mapEdit__icons div, .c-mapEdit__image div').css('cursor','pointer')
+      }
+    })
+    $('.c-mapEdit__editBtn .button--white').click(function(){
+      location.reload()
+    })
+    
+    $('.c-mapEdit__right--notEdit .button--white, .c-mapEdit__update').click(function(){
+      $('#uploadMap').click()
+    })
+    var oldMapPath;
+    $.ajax({
+      url: _ajaxLink + "?c=BasicInfo&m=getMap",
+      type: "GET",
+      dataType: "json",
+      async: false,
+      success: function(data){
+        if (data.map != '' && data.map != null) {
+          var url = data.map
+          $('.c-mapEdit__image').css("background-image","url('"+ url +"')")
+          $('.c-mapEdit__update').hide()
+          oldMapPath = url
+        }else if (data.map == '' || data.map == null){
+          $('.c-mapEdit__image').hide()
+          $('.c-mapEdit__right--notEdit .button--orange').addClass('disabled')
+        }else{
+          $('.c-mapEdit__image').hide()
+          $('.c-mapEdit__update').hide()
+          $('.c-mapEdit__right--notEdit .button--orange').addClass('disabled')
+        }
+      }
+    })
+    $('#uploadMap').fileupload({
+      url: _ajaxLink +'?c=Common&m=uploadFile&path=map',
+      dataType: 'json',
+      add:function(e, data){
+        var fileSize = data.originalFiles[0]['size']
+        var idx = data.originalFiles[0]['name'].lastIndexOf(".")
+        if (idx != -1){   
+          var fileType = data.originalFiles[0]['name'].substr(idx + 1).toUpperCase();   
+          fileType = fileType.toLowerCase( ); 
+        }
+        if(fileSize > 10 * 1024 * 1024){
+          $('.c-booking__errorPopup h2').attr('data-lang','string_text47')
+          allLanguageRender()
+          $('#popup__error').addClass('is-active')
+          return false
+        }else if (fileType != 'jpg' && fileType != 'jpeg' && fileType != 'png') {
+          $('.c-booking__errorPopup h2').attr('data-lang','string_text53')
+          allLanguageRender()
+          $('#popup__error').addClass('is-active')
+          return false
+        }else{
+          data.submit()
+        }
+      },
+      done: function (e, data) {
+        $('.c-mapEdit__image').css("background-image","url('"+ data.result.link +"')");
+        $.ajax({
+          url: _ajaxLink + "?c=BasicInfo&m=setMap",
+          type: "POST",
+          data:{
+            map: data.result.link
+          },
+          dataType: "json",
+          async: false,
+          success: function(result){
+            if (oldMapPath != '') {
+              $.ajax({
+                url: _ajaxLink + "?c=Common&m=deleteFile&path=map",
+                type: "POST",
+                data: {
+                  filePath: oldMapPath
+                },
+                dataType: "json",
+                async: false,
+                success: function(data){
+                }
+              })
+            }
+          }
+        })
+        oldMapPath = data.result.link
+        $('.c-mapEdit__right--notEdit .button--orange').removeClass('disabled')
+        $('.c-mapEdit__image').show()
+        $('.progress').hide()
+      },
+      progress: function (e, data) {
+        var progress = parseInt(data.loaded / data.total * 100, 10);
+        $('.progress').show()
+        $(".progress .bar").css("width", progress + "%");  
+        $(".upstatus").attr('data-lang','string_text31')
+        singleRender('string_text31') 
+      } 
+    })
+    
+    $.ajax({
+      url: _ajaxLink + "?c=BasicInfo&m=getBuildings&page=1&rpp=1000",
+      type: "GET",
+      dataType: "json",
+      async: false,
+      success: function(data){
+        if (data.state == 1 && data.ret != '') {
+          var haveStr = "";
+          var notStr = "";
+          $.each(data.ret, function (k, n) {
+            if (n.x != null && n.y != null && n.x != '' && n.y != '') {
+              haveStr += "<div draggable='false' ondragstart='drag(event)' onclick='offsetClick()' data-x='"+ n.x +"' data-y='"+ n.y +"' id='"+ n.building_id +"' style='position:absolute; left:"+ n.x +"; top:"+ n.y +";'><p>"+ n.building +"</p></div>"
+            }else{
+              notStr += "<div draggable='true' ondragstart='drag(event)' id='"+ n.building_id +"'><p>"+ n.building +"</p></div>"
+            }
+            $('#moveMap').html(haveStr)
+            $('#canotMoveMap').html(notStr)
+          })
+        }
+      }
+    })
+    
+    $('.c-mapEdit__editBtn .button--orange').click(function(){
+      var moveTips = $('#moveMap div')
+      var notMoveTips = $('#canotMoveMap div')
+      moveTips.each(function(){
+        var building_id = $(this).attr('id')
+        var x = $(this).attr('data-x')
+        var y = $(this).attr('data-y')
+        $.ajax({
+          url: _ajaxLink + "?c=BasicInfo&m=updateBuildingXY",
+          type: "POST",
+          data:{
+            building_id : building_id,
+            x: x,
+            y: y
+          },
+          dataType: "json",
+          async: false,
+          success: function(data){
+          }
+        })
+      })
+      notMoveTips.each(function(){
+        var building_id = $(this).attr('id')
+        var x = null
+        var y = null
+        $.ajax({
+          url: _ajaxLink + "?c=BasicInfo&m=updateBuildingXY",
+          type: "POST",
+          data:{
+            building_id : building_id,
+            x: x,
+            y: y
+          },
+          dataType: "json",
+          async: false,
+          success: function(data){
+          }
+        })
+      })
+      location.reload()
+    })
+    
+    var positionX , positionY;
+    var offsetX, offsetY;
+    
+    function allowDrop(ev){
+      ev.preventDefault();
+    }
+    function drag(ev){
+      ev.dataTransfer.setData("Text",ev.target.id);
+      offsetX = ev.offsetX
+      offsetY = ev.offsetY
+    }
+    
+    function drop1(ev){
+      ev.preventDefault();
+      var data=ev.dataTransfer.getData("Text");
+      ev.target.appendChild(document.getElementById(data));
+      positionX = ev.pageX-$('#moveMap').offset().left - offsetX - 2;
+      positionY = ev.pageY-$('#moveMap').offset().top - offsetY - 2; 
+      var divWidth = $('#moveMap').width()
+      var divHeight = $('#moveMap').height()
+      positionX = positionX / divWidth * 100 + '%'
+      positionY = positionY / divHeight * 100 + '%'
+      //$('span').html(positionX +'-'+positionY)
+      $('#'+ data).css({
+        'position': 'absolute',
+        'left': positionX,
+        'top': positionY
+      })
+      $('#'+ data).attr('data-x', positionX)
+      $('#'+ data).attr('data-y', positionY)
+    }
+    function drop2(ev){
+      ev.preventDefault();
+      var data=ev.dataTransfer.getData("Text");
+      ev.target.appendChild(document.getElementById(data));
+      $('#'+ data).css({
+        'position': 'static',
+        'left': '0',
+        'top': '0'
+      })
+      $('#'+ data).attr('data-x', '0')
+      $('#'+ data).attr('data-y', '0')
+    }
+  </script>
+</html>

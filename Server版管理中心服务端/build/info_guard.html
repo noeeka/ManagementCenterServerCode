@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Info - Guard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ManagementCenterServer">
+    <meta name="keywords" content="mcs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if (gt IE 9)]><!-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css"><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <link rel="stylesheet" type="text/css" href="./assets/css/app-ie.css"><![endif]--> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/froala_editor.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/wave.css">
+  </head>
+  <body>
+    <div data-state="string_equipment" class="c-menu">
+      <div class="c-folding"><img src="./assets/img/nav_icon_humberg2.png" alt="humberg"/></div>
+      <div class="c-menu__content">
+        <ul class="c-menu__content--parent">
+          <li class="c-menu__single"><a href="./index.html">
+              <div class="menu_img menu_homepage"></div>
+              <p data-lang="string_homepage"></p></a></li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_commu"></div>
+              <p data-lang="string_communication"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_communication"></p>
+              </li>
+              <li class="c-permission c-permission__intercom"><a href="./intercom_call.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_intercom_btn"></p></a></li>
+              <li class="c-permission c-permission__intercom"><a href="./monitor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_monitoring"></p></a></li>
+              <li class="c-permission c-permission__notice"><a href="./notice_image.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_announcement"></p></a></li>
+              <li class="c-permission c-permission__message"><a href="./message_send.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_message_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild c-permission c-permission__bookingDetail"><a>
+              <div class="menu_img menu_booking"></div>
+              <p data-lang="string_booking"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_booking"></p>
+              </li>
+              <li><a href="./booking_venues_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingSite"></p></a></li>
+              <li><a href="./booking_activity_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingActivities"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_data"></div>
+              <p data-lang="string_basic"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_basic"></p>
+              </li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_buildingInfo"></p></a></li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_indoor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_equipment"></p></a></li>
+              <li class="c-permission c-permission__super"><a href="./sip_group.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_sipServer"></p></a></li>
+              <li class="c-permission c-permission__infoSearch"><a href="./search_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_searchingData"></p></a></li>
+              <li class="c-permission c-permission__online"><a href="./online_testing.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_jiance_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__single c-permission c-permission__alarm"><a href="./defense_record.html">
+              <div class="menu_img menu_security"></div>
+              <p data-lang="string_security"></p></a></li>
+          <li class="c-menu__hasChild c-permission c-permission__super"><a>
+              <div class="menu_img menu_more"></div>
+              <p data-lang="string_more"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_more"></p>
+              </li>
+              <li><a href="./user_position.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_managementId"></p></a></li>
+              <li><a href="./device_management.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_deviceManagement"></p></a></li>
+              <li><a href="./backup_restore.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_backup"></p></a></li>
+              <li class="c-permission"><a href="./map_edit.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_mapEdit"></p></a></li>
+              <li><a href="./setting_local.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_setting"></p></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="c-content__right c-permission__page--infoEdit">
+      <div class="c-levelNav fourth-child">
+        <ul>
+          <li><a href="./info_indoor.html" data-lang="string_indoor"></a></li>
+          <li><a href="./info_outdoor.html" data-lang="string_outdoor"></a></li>
+          <li><a href="./info_fence.html" data-lang="string_fence"></a></li>
+          <li><a href="./info_guard.html" data-lang="string_guard"></a></li>
+        </ul>
+      </div>
+      <div id="info_guard" class="c-content">
+        <div style="width:100%" class="c-content__select">
+          <p data-lang="string_buildingColon"></p>
+          <dl tabindex="1" id="select--building" class="c-select">
+            <dt value=""></dt>
+            <dd></dd>
+          </dl>
+          <p data-lang="string_blockColon"></p>
+          <dl tabindex="1" id="select--block" class="c-select">
+            <dt value=""></dt>
+            <dd></dd>
+          </dl>
+          <div data-lang="string_add" style="margin-top:3px" class="button button--orange fr f-add"></div>
+        </div>
+        <table id="table_guard" style="width:100%" class="c-table c-table__standard">
+          <thead>
+            <tr>
+              <th data-lang="string_number"></th>
+              <th>IP</th>
+              <th data-lang="string_modelNumber"></th>
+              <th data-lang="string_remark"></th>
+              <th data-lang="string_operate" style="width: 115px"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <ul class="pagination"></ul>
+        <div id="popup__delete" class="c-popup">
+          <div class="c-popup__content">
+            <div class="c-popup__content--nav">
+              <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+            </div>
+            <h3 data-lang="string_confirmDelete"></h3>
+            <div class="c-popup__button">
+              <div data-id data-lang="string_delete" class="button button--red f-confirm"></div>
+              <div data-lang="string_cancel" class="button button--white f-close"></div>
+            </div>
+          </div>
+        </div>
+        <div id="popup__add" class="c-popup">
+          <div class="c-popup__content">
+            <div class="c-popup__content--nav">
+              <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+            </div>
+            <table class="c-table c-table__popup">
+              <tr>
+                <td data-lang="string_buildingColon"></td>
+                <td>
+                  <dl tabindex="1" id="select--building__add" class="c-select disabled">
+                    <dt value=""></dt>
+                  </dl>
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_blockColon"></td>
+                <td>
+                  <dl tabindex="1" id="select--block__add" class="c-select disabled">
+                    <dt value=""></dt>
+                  </dl>
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_ipColon"></td>
+                <td id="ipAddress__add" class="addressInput">
+                  <input type="text" value="" class="c-input-small"><span>.</span>
+                  <input type="text" value="" class="c-input-small"><span>.</span>
+                  <input type="text" value="" class="c-input-small"><span>.</span>
+                  <input type="text" value="" class="c-input-small">
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_numberColon"></td>
+                <td>
+                  <input type="text" name="guard_no" maxlength="4" class="allowNumAndEnglish">
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_modelNumberColon"></td>
+                <td>
+                  <select id="modelNumber__add" class="c-select c-select__fixed"></select>
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_remarkColon"></td>
+                <td>
+                  <input type="text" name="remark" maxlength="20">
+                </td>
+              </tr>
+              <tr class="c-popup__button">
+                <td colspan="2">
+                  <div data-lang="string_confirm" class="button button--orange"></div>
+                  <div data-lang="string_cancel" class="button button--white f-close"></div>
+                </td>
+              </tr>
+            </table>
+            <div class="result"></div>
+          </div>
+        </div>
+        <div id="popup__edit" class="c-popup">
+          <div class="c-popup__content">
+            <div class="c-popup__content--nav">
+              <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+            </div>
+            <table class="c-table c-table__popup">
+              <tr>
+                <td data-lang="string_buildingColon"></td>
+                <td>
+                  <dl tabindex="1" id="select--building__edit" class="c-select disabled">
+                    <dt value=""></dt>
+                  </dl>
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_blockColon"></td>
+                <td>
+                  <dl tabindex="1" id="select--block__edit" class="c-select disabled">
+                    <dt value=""></dt>
+                  </dl>
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_ipColon"></td>
+                <td id="ipAddress__edit" class="addressInput">
+                  <input type="text" value="" class="c-input-small"><span>.</span>
+                  <input type="text" value="" class="c-input-small"><span>.</span>
+                  <input type="text" value="" class="c-input-small"><span>.</span>
+                  <input type="text" value="" class="c-input-small">
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_numberColon"></td>
+                <td>
+                  <input type="text" name="guard_no" maxlength="4" disabled class="allowNumAndEnglish">
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_modelNumberColon"></td>
+                <td>
+                  <select id="modelNumber__edit" class="c-select c-select__fixed"></select>
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_remarkColon"></td>
+                <td>
+                  <input type="text" name="remark" maxlength="20">
+                </td>
+              </tr>
+              <tr class="c-popup__button">
+                <td colspan="2">
+                  <div data-lang="string_confirm" class="button button--orange"></div>
+                  <div data-lang="string_cancel" class="button button--white f-close"></div>
+                </td>
+              </tr>
+            </table>
+            <div class="result">       </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include ./_footer--><!--[if (gt IE 9)]><!-->
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.cookie.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.i18n.properties.min.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.iframe-transport.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.fileupload.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/wave.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/mqttws.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/qwebchannel.js" type="text/javascript"></script><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <script src="./assets/js/vendor/old-ie/jquery-1.9.0.js"></script>
+    <script src="./assets/js/vendor/old-ie/html5shiv.js"></script>
+    <script src="./assets/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->
+    <script src="./assets/js/vendor.min.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+    <script src="./assets/js/app.min.js" type="text/javascript"></script>
+    <script src="./assets/js/ajax.js" type="text/javascript"></script>
+  </body>
+  <script>
+    $.ajax({
+      url: _ajaxLink + "?c=BasicInfo&m=getBuildings&page=1&rpp=1000",
+      type: "GET",
+      dataType: "json",
+      async: false,
+      success: function(data){
+        if (data.state == 1) {
+          var str = "";
+          $.each(data.ret, function (k, n) {
+            str += "<a value="+ n.building_id +" onclick='goTopThis(this)'>"+ n.building +"</a>";
+          })
+          var building_dt = $("#select--building dt") 
+          var building_dd = $("#select--building dd")
+          building_dd.html(str)
+          var building_id = building_dd.find('a').eq(0).attr('value')
+          var building_html = building_dd.find('a').eq(0).html()
+          building_dt.attr('value',building_id)
+          building_dt.html(building_html)
+          $('#select--building__add dt, #select--building__edit dt').attr('value', building_id)
+          $('#select--building__add dt, #select--building__edit dt').html(building_html)
+          getBlockList(building_id)
+        }
+      }
+    })
+    
+    function getBlockList(building_id) {
+      var building_id = building_id
+      $.ajax({
+        url: _ajaxLink + "?c=BasicInfo&m=getUnits&page=1&rpp=1000",
+        type: "POST",
+        dataType: "json",
+        async: false,
+        data:{
+          building_id: building_id
+        },
+        success: function(data){
+          if(data.state == 1 && data.ret != ''){
+            var str = "";
+            $.each(data.ret, function (k, n) {
+              str += "<a value="+ n.unit_id +" onclick='goTopThis(this)'>"+ n.unit +"</a>";
+            })
+            var block_dt = $("#select--block dt") 
+            var block_dd = $("#select--block dd")
+            block_dd.html(str)
+            var unit_id = block_dd.find('a').eq(0).attr('value')
+            var unit_html = block_dd.find('a').eq(0).html()
+            block_dt.attr('value',unit_id)
+            block_dt.html(unit_html)
+            $('#select--block__add dt, #select--block__edit dt').attr('value', unit_id)
+            $('#select--block__add dt, #select--block__edit dt').html(unit_html)
+            $('.c-content__select .button--orange').removeClass('disabled')
+            getGuard(page, building_id, unit_id)
+          }else{
+            $('#select--block dt, #select--block dd').html('')
+            $('#select--block dt').attr('value','')
+            $('#select--block__add dt, #select--block__edit dt').attr('value', '')
+            $('#select--block__add dt, #select--block__edit dt').html('')
+            $('.c-content__select .button--orange').addClass('disabled')
+          }
+        }
+      })
+    }
+    $('#select--building dd').click(function(){
+      var building_id = $('#select--building dt').attr('value')
+      getBlockList(building_id)
+    })  
+    
+    getDeviceTypeName('07')
+    
+    $('.f-add').click(function(){
+      $("#popup__add input").css('border-color', '#ccc')
+      $("#popup__add input").val('')
+      $("#popup__add .result").html('')
+      $("#popup__add .result").attr('data-lang','')
+    })
+  </script>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Sip Server</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ManagementCenterServer">
+    <meta name="keywords" content="mcs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if (gt IE 9)]><!-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css"><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <link rel="stylesheet" type="text/css" href="./assets/css/app-ie.css"><![endif]--> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/froala_editor.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/wave.css">
+  </head>
+  <body>
+    <div data-state="string_sipServer" class="c-menu">
+      <div class="c-folding"><img src="./assets/img/nav_icon_humberg2.png" alt="humberg"/></div>
+      <div class="c-menu__content">
+        <ul class="c-menu__content--parent">
+          <li class="c-menu__single"><a href="./index.html">
+              <div class="menu_img menu_homepage"></div>
+              <p data-lang="string_homepage"></p></a></li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_commu"></div>
+              <p data-lang="string_communication"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_communication"></p>
+              </li>
+              <li class="c-permission c-permission__intercom"><a href="./intercom_call.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_intercom_btn"></p></a></li>
+              <li class="c-permission c-permission__intercom"><a href="./monitor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_monitoring"></p></a></li>
+              <li class="c-permission c-permission__notice"><a href="./notice_image.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_announcement"></p></a></li>
+              <li class="c-permission c-permission__message"><a href="./message_send.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_message_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild c-permission c-permission__bookingDetail"><a>
+              <div class="menu_img menu_booking"></div>
+              <p data-lang="string_booking"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_booking"></p>
+              </li>
+              <li><a href="./booking_venues_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingSite"></p></a></li>
+              <li><a href="./booking_activity_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingActivities"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_data"></div>
+              <p data-lang="string_basic"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_basic"></p>
+              </li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_buildingInfo"></p></a></li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_indoor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_equipment"></p></a></li>
+              <li class="c-permission c-permission__super"><a href="./sip_group.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_sipServer"></p></a></li>
+              <li class="c-permission c-permission__infoSearch"><a href="./search_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_searchingData"></p></a></li>
+              <li class="c-permission c-permission__online"><a href="./online_testing.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_jiance_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__single c-permission c-permission__alarm"><a href="./defense_record.html">
+              <div class="menu_img menu_security"></div>
+              <p data-lang="string_security"></p></a></li>
+          <li class="c-menu__hasChild c-permission c-permission__super"><a>
+              <div class="menu_img menu_more"></div>
+              <p data-lang="string_more"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_more"></p>
+              </li>
+              <li><a href="./user_position.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_managementId"></p></a></li>
+              <li><a href="./device_management.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_deviceManagement"></p></a></li>
+              <li><a href="./backup_restore.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_backup"></p></a></li>
+              <li class="c-permission"><a href="./map_edit.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_mapEdit"></p></a></li>
+              <li><a href="./setting_local.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_setting"></p></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="c-content__right c-permission__page--super">
+      <div class="c-levelNav first-child">
+        <ul>
+          <li><a href="./sip_group.html" data-lang="string_sipGroup"></a></li>
+          <li><a href="./sip_transfer.html" data-lang="string_sipTransfer"></a></li>
+          <li><a href="./sip_fixed.html" data-lang="string_fixedTransfer"></a></li>
+        </ul>
+      </div>
+      <div id="sip_group" class="c-content">
+        <div style="width:100%" class="c-content__select">
+          <div data-lang="string_add" style="margin-top:3px" class="button button--orange fr f-add"></div>
+        </div>
+        <table id="table_group" style="width:100%; table-layout: fixed;" class="c-table c-table__standard">
+          <thead>
+            <tr>
+              <th data-lang="string_groupName" style="width: 230px"></th>
+              <th data-lang="string_groupMembers" style="width: 593px"></th>
+              <th data-lang="string_operate" style="width: 115px"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="popup__delete" class="c-popup">
+          <div class="c-popup__content">
+            <div class="c-popup__content--nav">
+              <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+            </div>
+            <h3 data-lang="string_confirmDelete"></h3>
+            <div class="c-popup__button">
+              <div data-id data-lang="string_delete" class="button button--red f-confirm"></div>
+              <div data-lang="string_cancel" class="button button--white f-close"></div>
+            </div>
+          </div>
+        </div>
+        <div id="popup__add" class="c-popup">
+          <div class="c-popup__content">
+            <div class="c-popup__content--nav">
+              <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+            </div>
+            <table class="c-table c-table__popup">
+              <tr>
+                <td data-lang="string_groupNameColon"></td>
+                <td>
+                  <input type="text" value="" name="remark" maxlength="20">
+                </td>
+              </tr>
+              <tr class="c-sip__list">
+                <td colspan="2">
+                  <div class="c-sip__list--left">
+                    <h2 data-lang="string_guardAdd"></h2>
+                    <div class="c-sip__list--left--list"></div>
+                  </div>
+                  <div class="c-sip__list--btn">
+                    <div class="c-sip__list--btn--img disabled"><img src="./assets/img/choose.png"></div>
+                  </div>
+                  <div class="c-sip__list--right">
+                    <h2 data-lang="string_groupMembers"></h2>
+                    <div class="c-sip__list--right--list"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="c-popup__button">
+                <td colspan="2">
+                  <div data-lang="string_confirm" class="button button--orange disabled"></div>
+                  <div data-lang="string_cancel" class="button button--white f-close"></div>
+                </td>
+              </tr>
+            </table>
+            <div class="result"></div>
+          </div>
+        </div>
+        <div id="popup__edit" class="c-popup">
+          <div class="c-popup__content">
+            <div class="c-popup__content--nav">
+              <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+            </div>
+            <table class="c-table c-table__popup">
+              <tr>
+                <td data-lang="string_groupNameColon"></td>
+                <td>
+                  <input type="text" value="" name="remark" maxlength="20">
+                </td>
+              </tr>
+              <tr class="c-sip__list">
+                <td colspan="2">
+                  <div class="c-sip__list--left">
+                    <h2 data-lang="string_guardAdd"></h2>
+                    <div class="c-sip__list--left--list"></div>
+                  </div>
+                  <div class="c-sip__list--btn">
+                    <div class="c-sip__list--btn--img disabled"><img src="./assets/img/choose.png"></div>
+                  </div>
+                  <div class="c-sip__list--right">
+                    <h2 data-lang="string_groupMembers"></h2>
+                    <div class="c-sip__list--right--list"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="c-popup__button">
+                <td colspan="2">
+                  <div data-lang="string_confirm" class="button button--orange f-confirm"></div>
+                  <div data-lang="string_cancel" class="button button--white f-close"></div>
+                </td>
+              </tr>
+            </table>
+            <div class="result">       </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include ./_footer--><!--[if (gt IE 9)]><!-->
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.cookie.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.i18n.properties.min.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.iframe-transport.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.fileupload.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/wave.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/mqttws.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/qwebchannel.js" type="text/javascript"></script><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <script src="./assets/js/vendor/old-ie/jquery-1.9.0.js"></script>
+    <script src="./assets/js/vendor/old-ie/html5shiv.js"></script>
+    <script src="./assets/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->
+    <script src="./assets/js/vendor.min.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+    <script src="./assets/js/app.min.js" type="text/javascript"></script>
+    <script src="./assets/js/ajax.js" type="text/javascript"></script>
+  </body>
+  <script>
+    getSipGroup()
+    function getGroupList(){
+      $('#popup__add .c-sip__list .c-sip__list--left--list').empty()
+      $.ajax({
+        url: _ajaxLink + "?c=BasicInfo&m=getGuardAndUserSipList",
+        type: "GET",
+        dataType: "json",
+        async: false,
+        success: function(data){
+          if (data.state == 1 && data.ret != '') {
+            var guardStr = "";
+            var userStr = "";
+            $.each(data.ret, function (k, n) {
+              if (n.username == '') {
+                if (tem_lang == 'zh') {
+                  n.building += '栋'
+                  n.unit += '单元'
+                  n.deviceNo += '号'
+                  var guardName = '卫: ' + n.building + n.unit + n.deviceNo
+                }else if (tem_lang == 'en') {
+                  n.building = ' Bld' + n.building
+                  n.unit = ' Blk' + n.unit
+                  n.deviceNo = 'NO.' + n.deviceNo
+                  var guardName = 'Guard: ' + n.deviceNo + n.unit + n.building
+                }else if (tem_lang == 'hk') {
+                  n.building += '棟'
+                  n.unit += '單元'
+                  n.deviceNo += '號'
+                  var guardName = '衛: ' + n.building + n.unit + n.deviceNo
+                }
+                guardStr += "<p data-type='07' data-value='"+ n.sipNo +"' onclick='changeColor(this)'>"+ guardName +"</p>";
+              }else{
+                if (tem_lang == 'zh') {
+                  var userText = '用户: ' + n.username
+                }else if (tem_lang == 'en') {
+                  var userText = 'User: ' + n.username
+                }else if (tem_lang == 'hk') {
+                  var userText = '用戶: ' + n.username
+                }
+                userStr += "<p data-type='00' data-value='"+ n.sipNo +"' onclick='changeColor(this)'>"+ userText +"</p>"
+              }
+              
+            })
+            $("#popup__add .c-sip__list--left--list").html(guardStr + userStr)
+          }else if (data.state == 1 && data.ret== ''){
+            var noGuard = "<div data-lang='string_noDeviceRecord' style='font-size: 14px;text-align: center; padding-top: 64px;'></div>"
+            $("#popup__add .c-sip__list--left--list").html(noGuard)
+          }
+        }
+      })
+      allLanguageRender()
+      checkRightList()
+    }
+    function changeColor(obj){
+      var that = $(obj)
+      that.toggleClass('is-active')
+      checkSipList()
+    }
+    function checkSipList(){
+      var showDivId = $('.c-popup.is-active').attr('id')
+      var len = $("#" + showDivId).find('.c-sip__list--left--list .is-active').length
+      if (len < 1) {
+        $("#" + showDivId).find('.c-sip__list--btn--img').addClass('disabled')
+      }else{
+        $("#" + showDivId).find('.c-sip__list--btn--img').removeClass('disabled')
+      }
+      checkRightList()
+    }
+    function checkRightList(){
+      var showDivId = $('.c-popup.is-active').attr('id')
+      if ($("#" + showDivId).find('.c-sip__list--right--list').html() != '') {
+        $("#" + showDivId).find('.button--orange').removeClass('disabled')
+      }else{
+        $("#" + showDivId).find('.button--orange').addClass('disabled')
+      }
+    }
+    
+    $('.c-sip__list--btn--img').click(function(){
+      if ($(this).hasClass('disabled')) {
+        return false
+      }else{
+        var str = "";
+        var leftChoose = $(this).parent().siblings('.c-sip__list--left').find('.c-sip__list--left--list').find('.is-active')
+        leftChoose.each(function(){
+          var sipNo = $(this).attr('data-value')
+          var name = $(this).html()
+          var type = $(this).attr('data-type')
+          str += "<p data-type='"+ type +"' data-value='"+ sipNo +"'><span>"+ name +"</span><span class='removeIcon' onclick='chooseGoBack(this)'><i class='fa fa-times'></i></span></p>"
+        })
+        $(this).parent().siblings('.c-sip__list--right').find('.c-sip__list--right--list').append(str)
+        $(this).parent().siblings('.c-sip__list--left').find('.c-sip__list--left--list').find('p.is-active').remove()
+        checkSipList()
+      }
+    })
+    
+    function chooseGoBack(obj){
+      var that = $(obj)
+      var sipNo = that.parent().attr('data-value')
+      var name = that.siblings('span').html()
+      var str = "<p data-value='"+ sipNo +"' onclick='changeColor(this)'>"+ name +"</p>";
+      that.parents('.c-sip__list--right').siblings('.c-sip__list--left').find('.c-sip__list--left--list').append(str)
+      that.parent().remove()
+      checkRightList()
+    }
+    
+    $('.c-content__select .button--orange').click(function(){
+      $('#popup__add .c-sip__list--right--list').empty()
+      $('#popup__add .button--orange').addClass('disabled')
+      getGroupList()
+    })
+    
+    $('.f-add').click(function(){
+      $("#popup__add input").css('border-color', '#ccc')
+      $("#popup__add input").val('')
+      $("#popup__add .result").html('')
+      $("#popup__add .result").attr('data-lang','')
+    })
+  </script>
+</html>

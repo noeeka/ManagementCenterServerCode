@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Setting - Local</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ManagementCenterServer">
+    <meta name="keywords" content="mcs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if (gt IE 9)]><!-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css"><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <link rel="stylesheet" type="text/css" href="./assets/css/app-ie.css"><![endif]--> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/froala_editor.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/wave.css">
+  </head>
+  <body>
+    <div data-state="string_setting" class="c-menu">
+      <div class="c-folding"><img src="./assets/img/nav_icon_humberg2.png" alt="humberg"/></div>
+      <div class="c-menu__content">
+        <ul class="c-menu__content--parent">
+          <li class="c-menu__single"><a href="./index.html">
+              <div class="menu_img menu_homepage"></div>
+              <p data-lang="string_homepage"></p></a></li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_commu"></div>
+              <p data-lang="string_communication"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_communication"></p>
+              </li>
+              <li class="c-permission c-permission__intercom"><a href="./intercom_call.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_intercom_btn"></p></a></li>
+              <li class="c-permission c-permission__intercom"><a href="./monitor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_monitoring"></p></a></li>
+              <li class="c-permission c-permission__notice"><a href="./notice_image.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_announcement"></p></a></li>
+              <li class="c-permission c-permission__message"><a href="./message_send.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_message_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild c-permission c-permission__bookingDetail"><a>
+              <div class="menu_img menu_booking"></div>
+              <p data-lang="string_booking"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_booking"></p>
+              </li>
+              <li><a href="./booking_venues_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingSite"></p></a></li>
+              <li><a href="./booking_activity_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingActivities"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_data"></div>
+              <p data-lang="string_basic"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_basic"></p>
+              </li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_buildingInfo"></p></a></li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_indoor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_equipment"></p></a></li>
+              <li class="c-permission c-permission__super"><a href="./sip_group.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_sipServer"></p></a></li>
+              <li class="c-permission c-permission__infoSearch"><a href="./search_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_searchingData"></p></a></li>
+              <li class="c-permission c-permission__online"><a href="./online_testing.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_jiance_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__single c-permission c-permission__alarm"><a href="./defense_record.html">
+              <div class="menu_img menu_security"></div>
+              <p data-lang="string_security"></p></a></li>
+          <li class="c-menu__hasChild c-permission c-permission__super"><a>
+              <div class="menu_img menu_more"></div>
+              <p data-lang="string_more"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_more"></p>
+              </li>
+              <li><a href="./user_position.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_managementId"></p></a></li>
+              <li><a href="./device_management.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_deviceManagement"></p></a></li>
+              <li><a href="./backup_restore.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_backup"></p></a></li>
+              <li class="c-permission"><a href="./map_edit.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_mapEdit"></p></a></li>
+              <li><a href="./setting_local.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_setting"></p></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="c-content__right c-permission__page--super">
+      <div class="c-levelNav first-child">
+        <ul>
+          <li><a href="./setting_local.html" data-lang="string_localInfo"></a></li>
+          <li><a href="./setting_calendar.html" data-lang="string_calendar"></a></li>
+          <li><a href="./setting_rss.html" data-lang="string_rss"></a></li>
+          <li><a href="./setting_server.html" data-lang="string_serviceStatus"></a></li>
+        </ul>
+      </div>
+      <div id="setting_local" class="c-content">
+        <div class="c-setting__list">
+          <div class="c-setting__item c-setting__item--left">
+            <p data-lang="string_area"></p>
+          </div>
+          <div class="c-setting__item c-setting__item--right">
+            <div name="" class="pick-area fl"></div>
+            <div data-lang="string_submit" class="button button--orange fl"></div>
+            <div style="top: 0; left: 20px;" class="result fl"></div>
+          </div>
+        </div>
+        <div class="c-setting__list">
+          <div class="c-setting__item c-setting__item--left">
+            <p data-lang="string_roadTraffic"></p>
+          </div>
+          <div class="c-setting__item c-setting__item--right">
+            <div id="l-map"></div>
+            <input id="lng" type="hidden">
+            <input id="lat" type="hidden">
+            <input id="mapInfo" type="hidden">
+            <div id="sub" data-lang="string_screenshot" class="button button--orange"></div><img src="./assets/img/loading.gif" class="loading-img">
+          </div>
+        </div>
+        <div id="popup__tips" class="c-popup">
+          <div class="c-popup__content">
+            <div style="margin-bottom: 10px" class="c-popup__content--nav">
+              <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+            </div>
+            <div style="padding: 20px 30px; text-align: center;" class="c-local__tips">
+              <h2 style="font-size: 18px;margin-bottom: 20px;"></h2>
+              <div data-lang="string_text8" class="button button--white f-close"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include ./_footer--><!--[if (gt IE 9)]><!-->
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.cookie.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.i18n.properties.min.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.iframe-transport.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.fileupload.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/wave.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/mqttws.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/qwebchannel.js" type="text/javascript"></script><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <script src="./assets/js/vendor/old-ie/jquery-1.9.0.js"></script>
+    <script src="./assets/js/vendor/old-ie/html5shiv.js"></script>
+    <script src="./assets/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->
+    <script src="./assets/js/vendor.min.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+    <script src="./assets/js/app.min.js" type="text/javascript"></script>
+    <script src="./assets/js/ajax.js" type="text/javascript"></script>
+  </body>
+  <script src="./assets/js/vendor/pick-pcc.js"></script>
+  <script src="http://api.map.baidu.com/api?v=2.0&amp;ak=fjEOTea6oQGEcK1GSUHruG4efO9fccei" type="text/javascript"></script>
+  <script src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js" type="text/javascript"></script>
+  <script>
+    var cityName;
+    $.ajax({
+      url: _ajaxLink + "?c=Configuration&m=location",
+      type: "GET",
+      dataType: "json",
+      async: false,
+      success: function(data){
+        if(data.state==1){
+          if (data.ret.citycode != '') {
+            $('.pick-area + .button--orange').attr('data-id', data.ret.citycode)
+          }else{
+            $('.pick-area + .button--orange').attr('data-id', '101010100')
+          }
+          if (data.ret.cityname != '') {
+            cityName = data.ret.cityname
+          }else{
+            cityName = '北京/北京'
+          }
+        }
+      }
+    })
+    
+    $(".pick-area").pickArea({
+        "format": cityName,
+        "width":"200",
+        "fontSize":"16px",
+        "paddingLeft":"10px",
+        "arrowRight":"10px"
+    });
+    
+    $('input.pick-area').val(cityName)
+    //map
+    map = new BMap.Map("l-map", {enableMapClick: false});
+    $.ajax({
+      type: "GET",
+      url: "../index.php?c=Configuration&m=trafficMapParam",
+      async: false,
+      success: function (data) {
+        if (data.state == 1) {
+          $("#lng").val(data.ret.lng)
+          $("#lat").val(data.ret.lat)
+          $("#mapInfo").val(data.ret.zoom)
+        } else {
+          console.log("API error");
+        }
+      },
+      dataType: "json"
+    })
+    var point = new BMap.Point($("#lng").val(), $("#lat").val())
+    map.centerAndZoom(new BMap.Point($("#lng").val(), $("#lat").val()) ,parseInt($("#mapInfo").val()));
+    map.enableScrollWheelZoom(true);
+    var ctrl = new BMapLib.TrafficControl({ showPanel: false });      
+    map.addControl(ctrl);
+    ctrl.setAnchor(BMAP_ANCHOR_BOTTOM_RIGHT);  
+    ctrl.showTraffic();
+    map.addEventListener("zoomend", function (e) {
+      var cp = map.getBounds()
+      var pt = cp.getCenter()
+      var zoom=map.getZoom()
+      $("#mapInfo").val(zoom)
+      $("#lng").val(pt.lng)
+      $("#lat").val(pt.lat)
+    });
+    map.addEventListener("dragend", function (e) {
+      var cp = map.getBounds()
+      var pt = cp.getCenter()
+      var zoom=map.getZoom()
+      $("#mapInfo").val(zoom)
+      $("#lng").val(pt.lng)
+      $("#lat").val(pt.lat)
+    });
+    $(document).ready(function () {
+      $("#sub").click(function () {
+        if ($(this).hasClass('disabled')) {
+          return false
+        }else{
+          $('.loading-img').css('display','inline-block')
+          $(this).addClass('disabled')
+          $.ajax({
+            type: "POST",
+            url: "../index.php?c=Configuration&m=trafficMapParam",
+            data: {
+              lng: $("#lng").val(), 
+              lat: $("#lat").val(), 
+              zoom: $("#mapInfo").val()
+            },
+            dataType: "json",
+            success: function (data) {
+              if (data.state == 1) {
+                $('#popup__tips').addClass('is-active')
+                $('.c-local__tips h2').attr('data-lang','string_calendarSuccess')
+                singleRender('string_calendarSuccess')
+                $('.loading-img').hide()
+                $("#sub").removeClass('disabled')
+              }else{
+                $('#popup__tips').addClass('is-active')
+                $('.c-local__tips h2').attr('data-lang','string_calendarError')
+                singleRender('string_calendarError')
+              }
+            }
+          })
+        }
+      })
+    })
+  </script>
+</html>

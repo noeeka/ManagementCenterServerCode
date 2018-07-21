@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Booking - homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="IndoorBooking">
+    <meta name="keywords" content="ib">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if (gt IE 9)]><!-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css"><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <link rel="stylesheet" type="text/css" href="./assets/css/app-ie.css"><![endif]--> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
+  </head>
+  <body>
+    <div class="c-nav first-child">
+      <ul>
+        <li><a href="./index.html">
+            <div class="c-nav__icon c-nav__icon--overview"></div><span data-lang="string_1"></span></a></li>
+        <li><a href="./booking_venues.html">
+            <div class="c-nav__icon c-nav__icon--venues"></div><span data-lang="string_44"></span></a></li>
+        <li><a href="./booking_activity.html">
+            <div class="c-nav__icon c-nav__icon--activity"></div><span data-lang="string_45"></span></a></li>
+        <li><a href="./my_booking.html">
+            <div class="c-nav__icon c-nav__icon--myBooking"></div><span data-lang="string_4"></span></a></li>
+      </ul>
+    </div>
+    <div class="c-content c-homepage">
+      <div class="c-homepage__calendar">
+        <div id="schedule-box"></div>
+      </div>
+      <div class="c-homepage__list">
+        <div class="c-homepage__list--event">
+          <h3 data-lang="string_9"></h3>
+          <div data-lang="string_10" class="button button--blue"></div>
+          <div class="c-homepage__list--item">
+            <div style="width: 100%; height:100%;text-align: center;margin-top: 35px;" data-lang="string_12"></div>
+          </div>
+        </div>
+        <div class="c-homepage__list--venues">
+          <h3 data-lang="string_2"></h3><a href="./my_booking.html?block=venues" data-lang="string_11" class="button button--blue"></a>
+          <div class="c-homepage__list--item">
+            <div style="width: 100%; height:100%;text-align: center;margin-top: 35px;" data-lang="string_12"></div>
+          </div>
+        </div>
+        <div class="c-homepage__list--activity">
+          <h3 data-lang="string_3"></h3><a href="./my_booking.html?block=activity" data-lang="string_11" class="button button--blue"></a>
+          <div class="c-homepage__list--item">
+            <div style="width: 100%; height:100%;text-align: center;margin-top: 35px;" data-lang="string_12"></div>
+          </div>
+        </div>
+      </div>
+      <div class="c-popup c-popup__details">
+        <div class="c-popup__block">
+          <div class="c-popup__header">
+            <h4 data-lang="string_13"></h4>
+          </div>
+          <div class="c-popup__content">
+            <div class="c-popup__date"></div>
+            <div class="c-popup__list"></div>
+            <div data-lang="string_14" class="button button--blue"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include ./_footer--><!--[if (gt IE 9)]><!-->
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.cookie.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.i18n.properties.min.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/mqttws.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/qwebchannel.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/schedule.js" type="text/javascript"></script><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <script src="./assets/js/vendor/old-ie/jquery-1.9.0.js"></script>
+    <script src="./assets/js/vendor/old-ie/html5shiv.js"></script>
+    <script src="./assets/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->
+    <script src="./assets/js/vendor.min.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+    <script src="./assets/js/app.min.js" type="text/javascript"></script>
+    <script src="./assets/js/ajax.js" type="text/javascript"></script>
+  </body>
+  <script>
+    var nowTime = getnowTime()
+    var mySchedule = new Schedule({
+      el: '#schedule-box',
+      date: nowTime
+    });
+    checkNewDay()
+  </script>
+</html>

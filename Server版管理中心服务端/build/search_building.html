@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Search - Building</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ManagementCenterServer">
+    <meta name="keywords" content="mcs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if (gt IE 9)]><!-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css"><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <link rel="stylesheet" type="text/css" href="./assets/css/app-ie.css"><![endif]--> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/froala_editor.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/wave.css">
+  </head>
+  <body>
+    <div data-state="string_searchingData" class="c-menu">
+      <div class="c-folding"><img src="./assets/img/nav_icon_humberg2.png" alt="humberg"/></div>
+      <div class="c-menu__content">
+        <ul class="c-menu__content--parent">
+          <li class="c-menu__single"><a href="./index.html">
+              <div class="menu_img menu_homepage"></div>
+              <p data-lang="string_homepage"></p></a></li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_commu"></div>
+              <p data-lang="string_communication"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_communication"></p>
+              </li>
+              <li class="c-permission c-permission__intercom"><a href="./intercom_call.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_intercom_btn"></p></a></li>
+              <li class="c-permission c-permission__intercom"><a href="./monitor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_monitoring"></p></a></li>
+              <li class="c-permission c-permission__notice"><a href="./notice_image.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_announcement"></p></a></li>
+              <li class="c-permission c-permission__message"><a href="./message_send.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_message_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild c-permission c-permission__bookingDetail"><a>
+              <div class="menu_img menu_booking"></div>
+              <p data-lang="string_booking"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_booking"></p>
+              </li>
+              <li><a href="./booking_venues_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingSite"></p></a></li>
+              <li><a href="./booking_activity_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingActivities"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_data"></div>
+              <p data-lang="string_basic"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_basic"></p>
+              </li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_buildingInfo"></p></a></li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_indoor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_equipment"></p></a></li>
+              <li class="c-permission c-permission__super"><a href="./sip_group.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_sipServer"></p></a></li>
+              <li class="c-permission c-permission__infoSearch"><a href="./search_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_searchingData"></p></a></li>
+              <li class="c-permission c-permission__online"><a href="./online_testing.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_jiance_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__single c-permission c-permission__alarm"><a href="./defense_record.html">
+              <div class="menu_img menu_security"></div>
+              <p data-lang="string_security"></p></a></li>
+          <li class="c-menu__hasChild c-permission c-permission__super"><a>
+              <div class="menu_img menu_more"></div>
+              <p data-lang="string_more"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_more"></p>
+              </li>
+              <li><a href="./user_position.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_managementId"></p></a></li>
+              <li><a href="./device_management.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_deviceManagement"></p></a></li>
+              <li><a href="./backup_restore.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_backup"></p></a></li>
+              <li class="c-permission"><a href="./map_edit.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_mapEdit"></p></a></li>
+              <li><a href="./setting_local.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_setting"></p></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="c-content__right c-permission__page--infoSearch">
+      <div class="c-levelNav first-child">
+        <ul>
+          <li><a href="./search_building.html" data-lang="string_searchBuilding"></a></li>
+          <li><a href="./search_user.html" data-lang="string_searchUser"></a></li>
+          <li><a href="./search_device.html" data-lang="string_searchDevice"></a></li>
+        </ul>
+      </div>
+      <div id="search_building" class="c-content">
+        <div class="c-content__select">
+          <p data-lang="string_buildingColon"></p>
+          <dl tabindex="1" id="select--building" class="c-select">
+            <dt value=""></dt>
+            <dd></dd>
+          </dl>
+          <p data-lang="string_blockColon"></p>
+          <dl tabindex="1" id="select--block" class="c-select">
+            <dt value=""></dt>
+            <dd></dd>
+          </dl>
+          <p data-lang="string_roomColon"></p>
+          <dl tabindex="1" id="select--room" class="c-select">
+            <dt value=""></dt>
+            <dd></dd>
+          </dl>
+          <div data-lang="string_search" style="margin-top:1px; margin-left:15px;" onclick="searchResults()" class="button button--orange fl"></div>
+        </div>
+        <table id="table_search_building" class="c-table c-table__standard">
+          <thead>
+            <tr>
+              <th data-lang="string_position"></th>
+              <th data-lang="string_describe"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <ul class="pagination"></ul>
+      </div>
+    </div>
+    <!--include ./_footer--><!--[if (gt IE 9)]><!-->
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.cookie.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.i18n.properties.min.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.iframe-transport.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.fileupload.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/wave.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/mqttws.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/qwebchannel.js" type="text/javascript"></script><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <script src="./assets/js/vendor/old-ie/jquery-1.9.0.js"></script>
+    <script src="./assets/js/vendor/old-ie/html5shiv.js"></script>
+    <script src="./assets/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->
+    <script src="./assets/js/vendor.min.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+    <script src="./assets/js/app.min.js" type="text/javascript"></script>
+    <script src="./assets/js/ajax.js" type="text/javascript"></script>
+  </body>
+  <script>
+    $.ajax({
+      url: _ajaxLink + "?c=BasicInfo&m=getBuildings&page=1&rpp=1000",
+      type: "GET",
+      dataType: "json",
+      async: false,
+      success: function(data){
+        if (data.state == 1) {
+          var str = "";
+          str += "<a value='0' onclick='goTopThis(this)'>--</a>"
+          $.each(data.ret, function (k, n) {
+            str += "<a value="+ n.building_id +" onclick='goTopThis(this)'>"+ n.building +"</a>";
+          })
+          var building_dt = $("#select--building dt") 
+          var building_dd = $("#select--building dd")
+          building_dd.html(str)
+          var building_id = building_dd.find('a').eq(0).attr('value')
+          var building_html = building_dd.find('a').eq(0).html()
+          building_dt.attr('value',building_id)
+          building_dt.html(building_html)
+          getBlockList(building_id)
+        }
+      }
+    })
+    
+    function getBlockList(building_id) {
+      var building_id = building_id
+      if (building_id == '0') {
+        $("#select--block").addClass('disabled')
+      }else{
+        $("#select--block").removeClass('disabled')
+      }
+      $.ajax({
+        url: _ajaxLink + "?c=BasicInfo&m=getUnits&page=1&rpp=1000",
+        type: "POST",
+        dataType: "json",
+        async: false,
+        data:{
+          building_id: building_id
+        },
+        success: function(data){
+          if(data.state == 1){
+            var str = "";
+            if (data.ret != '') {
+              str += "<a value='0' onclick='goTopThis(this)'>--</a>"
+              $.each(data.ret, function (k, n) {
+                str += "<a value="+ n.unit_id +" onclick='goTopThis(this)'>"+ n.unit +"</a>";
+              })
+            }else{
+              str += "<a value='0' onclick='goTopThis(this)'>--</a>"
+            }
+            var block_dt = $("#select--block dt") 
+            var block_dd = $("#select--block dd")
+            block_dd.html(str)
+            var unit_id = block_dd.find('a').eq(0).attr('value')
+            var unit_html = block_dd.find('a').eq(0).html()
+            block_dt.attr('value',unit_id)
+            block_dt.html(unit_html)
+            getRoomList(building_id, unit_id)
+          }
+        }
+      })
+    }
+    
+    function getRoomList(building_id, unit_id){
+      if (unit_id == '0') {
+        $("#select--room").addClass('disabled')
+      }else{
+        $("#select--room").removeClass('disabled')
+      }
+      $.ajax({
+        url: _ajaxLink + "?c=BasicInfo&m=getRooms&page=1&rpp=1000",
+        type: "POST",
+        dataType: "json",
+        async: false,
+        data:{
+          building_id: building_id,
+          unit_id: unit_id
+        },
+        success: function(data){
+          if(data.state == 1){
+            var str = "";
+            if (data.ret != '') {
+              str += "<a value='0' onclick='goTopThis(this)'>--</a>"
+              $.each(data.ret, function (k, n) {
+                str += "<a value="+ n.room_id +" onclick='goTopThis(this)'>"+ n.room +"</a>";
+              })
+            }else{
+              str += "<a value='0' onclick='goTopThis(this)'>--</a>"
+            }
+            var room_dt = $("#select--room dt") 
+            var room_dd = $("#select--room dd")
+            room_dd.html(str)
+            var room_id = room_dd.find('a').eq(0).attr('value')
+            var room_html = room_dd.find('a').eq(0).html()
+            room_dt.attr('value',room_id)
+            room_dt.html(room_html)
+          }
+        }
+      })
+    }
+    
+    $('#select--building dd').click(function(){
+      var building_id = $('#select--building dt').attr('value')
+      getBlockList(building_id)
+    })  
+    
+    $('#select--block dd').click(function(){
+      var building_id = $('#select--building dt').attr('value')
+      var block_id = $('#select--block dt').attr('value')
+      getRoomList(building_id, block_id)
+    })    
+    
+    function searchResults(){
+      var building_id = $('#select--building dt').attr('value')
+      var unit_id = $('#select--block dt').attr('value')
+      var room_id = $('#select--room dt').attr('value')
+      var page = 1
+      getSearchBuilding(page, building_id, unit_id, room_id)
+    }
+    searchResults()
+  </script>
+</html>

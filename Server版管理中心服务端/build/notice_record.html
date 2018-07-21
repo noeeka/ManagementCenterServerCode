@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Notice - record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ManagementCenterServer">
+    <meta name="keywords" content="mcs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if (gt IE 9)]><!-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css"><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <link rel="stylesheet" type="text/css" href="./assets/css/app-ie.css"><![endif]--> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/froala_editor.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/wave.css">
+  </head>
+  <body>
+    <div data-state="string_announcement" class="c-menu">
+      <div class="c-folding"><img src="./assets/img/nav_icon_humberg2.png" alt="humberg"/></div>
+      <div class="c-menu__content">
+        <ul class="c-menu__content--parent">
+          <li class="c-menu__single"><a href="./index.html">
+              <div class="menu_img menu_homepage"></div>
+              <p data-lang="string_homepage"></p></a></li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_commu"></div>
+              <p data-lang="string_communication"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_communication"></p>
+              </li>
+              <li class="c-permission c-permission__intercom"><a href="./intercom_call.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_intercom_btn"></p></a></li>
+              <li class="c-permission c-permission__intercom"><a href="./monitor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_monitoring"></p></a></li>
+              <li class="c-permission c-permission__notice"><a href="./notice_image.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_announcement"></p></a></li>
+              <li class="c-permission c-permission__message"><a href="./message_send.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_message_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild c-permission c-permission__bookingDetail"><a>
+              <div class="menu_img menu_booking"></div>
+              <p data-lang="string_booking"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_booking"></p>
+              </li>
+              <li><a href="./booking_venues_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingSite"></p></a></li>
+              <li><a href="./booking_activity_details.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_bookingActivities"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__hasChild"><a>
+              <div class="menu_img menu_data"></div>
+              <p data-lang="string_basic"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_basic"></p>
+              </li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_buildingInfo"></p></a></li>
+              <li class="c-permission c-permission__infoEdit"><a href="./info_indoor.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_equipment"></p></a></li>
+              <li class="c-permission c-permission__super"><a href="./sip_group.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_sipServer"></p></a></li>
+              <li class="c-permission c-permission__infoSearch"><a href="./search_building.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_searchingData"></p></a></li>
+              <li class="c-permission c-permission__online"><a href="./online_testing.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_jiance_btn"></p></a></li>
+            </ul>
+          </li>
+          <li class="c-menu__single c-permission c-permission__alarm"><a href="./defense_record.html">
+              <div class="menu_img menu_security"></div>
+              <p data-lang="string_security"></p></a></li>
+          <li class="c-menu__hasChild c-permission c-permission__super"><a>
+              <div class="menu_img menu_more"></div>
+              <p data-lang="string_more"></p></a>
+            <ul class="c-menu__content--child">
+              <li>
+                <p data-lang="string_more"></p>
+              </li>
+              <li><a href="./user_position.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_managementId"></p></a></li>
+              <li><a href="./device_management.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_deviceManagement"></p></a></li>
+              <li><a href="./backup_restore.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_backup"></p></a></li>
+              <li class="c-permission"><a href="./map_edit.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_mapEdit"></p></a></li>
+              <li><a href="./setting_local.html">
+                  <div class="menu_point"></div>
+                  <p data-lang="string_setting"></p></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="c-content__right c-permission__page--notice">
+      <div class="c-levelNav fourth-child">
+        <ul>
+          <li><a href="./notice_image.html" data-lang="string_noticeImage"></a></li>
+          <li><a href="./notice_video.html" data-lang="string_noticeVideo"></a></li>
+          <li><a href="./notice_text.html" data-lang="string_noticeText"></a></li>
+          <li><a href="./notice_record.html" data-lang="string_noticeRecord"></a></li>
+        </ul>
+      </div>
+      <div class="c-content c-notice">
+        <div id="noticeTable_image">
+          <h3 data-lang="string_noticeImage"></h3>
+          <div class="c-notice--items"></div>
+          <ul class="pagination"></ul>
+        </div>
+        <div id="noticeTable_video">
+          <h3 data-lang="string_noticeVideo"></h3>
+          <div class="c-notice--items--upload"></div>
+          <div class="c-notice--items"></div>
+          <ul class="pagination"></ul>
+        </div>
+        <div id="noticeTable_text">
+          <h3 data-lang="string_noticeText"></h3>
+          <table style="width: 100%;" class="c-table c-table__standard">
+            <thead>
+              <tr>
+                <th data-lang="string_noticeContent" style="width: 150px"></th>
+                <th data-lang="string_noticeDate"></th>
+                <th data-lang="string_deadline"></th>
+                <th data-lang="string_overdue"></th>
+                <th data-lang="string_author"></th>
+                <th data-lang="string_operate" style="width: 115px"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <ul class="pagination"></ul>
+        </div>
+      </div>
+      <div id="popup__noticeImageEdit" class="c-popup">
+        <div class="c-popup__content">
+          <div class="c-popup__content--nav">
+            <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+          </div>
+          <div class="c-notice__imagePop">
+            <div class="c-notice__imagePop--left fl"><img src=""></div>
+            <div class="c-notice__imagePop--right fl">
+              <table>
+                <tr>
+                  <td data-lang="string_noticeDateColon"></td>
+                  <td id="popImageNoticeDate"></td>
+                </tr>
+                <tr>
+                  <td data-lang="string_deadlineColon"></td>
+                  <td id="popImageDeadline"></td>
+                </tr>
+                <tr>
+                  <td data-lang="string_overdueColon"></td>
+                  <td id="popImageOverdue"></td>
+                </tr>
+                <tr>
+                  <td data-lang="string_authorColon"></td>
+                  <td id="popImageAuthor"></td>
+                </tr>
+                <tr>
+                  <td data-lang="string_showDeviceColon"></td>
+                  <td id="popImageDevice">
+                    <p data-lang="string_look"></p>
+                  </td>
+                </tr>
+              </table>
+              <div class="c-popup__button">
+                <div data-id data-lang="string_edit" class="button button--orange"></div>
+                <div data-id data-lang="string_delete" class="button button--red"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="popup__noticeVideoEdit" class="c-popup">
+        <div class="c-popup__content">
+          <div class="c-popup__content--nav">
+            <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+          </div>
+          <div class="c-notice__videoPop">
+            <video src="" controls="controls" class="showOnPC"></video>
+            <table>
+              <tr class="showOnQt">
+                <td data-lang="string_noticePreviewColon"></td>
+                <td id="popVideoPlay">
+                  <p data-lang="string_play"></p>
+                </td>
+              </tr>
+              <tr>
+                <td data-lang="string_noticeDateColon"></td>
+                <td id="popVideoNoticeDate"></td>
+              </tr>
+              <tr>
+                <td data-lang="string_deadlineColon"></td>
+                <td id="popVideoDeadline"></td>
+              </tr>
+              <tr>
+                <td data-lang="string_overdueColon"></td>
+                <td id="popVideoOverdue"></td>
+              </tr>
+              <tr>
+                <td data-lang="string_authorColon"></td>
+                <td id="popVideoAuthor"></td>
+              </tr>
+              <tr>
+                <td data-lang="string_showDeviceColon"></td>
+                <td id="popVideoDevice">
+                  <p data-lang="string_look"></p>
+                </td>
+              </tr>
+            </table>
+            <div class="c-popup__button">
+              <div data-id data-lang="string_delete" class="button button--red"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="popup__noticeTextEdit" class="c-popup">
+        <div class="c-popup__content">
+          <div class="c-popup__content--nav">
+            <div class="nav-close f-close"><i class="fa fa-times"></i></div>
+          </div>
+          <div class="c-notice__TextPop">
+            <table>
+              <tr>
+                <td data-lang="string_noticeContentColon" style="vertical-align: top;"></td>
+                <td id="popTextContent"></td>
+              </tr>
+              <tr>
+                <td data-lang="string_noticeDateColon"></td>
+                <td id="popTextNoticeDate"></td>
+              </tr>
+              <tr>
+                <td data-lang="string_deadlineColon"></td>
+                <td id="popTextDeadline"></td>
+              </tr>
+              <tr>
+                <td data-lang="string_overdueColon"></td>
+                <td id="popTextOverdue"></td>
+              </tr>
+              <tr>
+                <td data-lang="string_authorColon"></td>
+                <td id="popTextAuthor"></td>
+              </tr>
+              <tr>
+                <td data-lang="string_showDeviceColon"></td>
+                <td id="popTextDevice">
+                  <p data-lang="string_look"></p>
+                </td>
+              </tr>
+            </table>
+            <div class="c-popup__button">
+              <div data-id data-lang="string_edit" class="button button--orange"></div>
+              <div data-id data-lang="string_delete" class="button button--red"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="popup__target" class="c-popup">
+        <div class="c-popup__content">
+          <div style="margin-bottom: 20px" class="c-popup__content--nav">
+            <div class="nav-close f-onlyclose"><i class="fa fa-times"></i></div>
+          </div>
+          <div class="c-popup__target">
+            <div class="c-popup__outdoor">
+              <h4 data-lang="string_outdoorListTarget"></h4>
+              <div class="c-popup__outdoor--list"></div>
+            </div>
+            <div class="c-popup__guard">
+              <h4 data-lang="string_guardListTarget"></h4>
+              <div class="c-popup__guard--list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include ./_footer--><!--[if (gt IE 9)]><!-->
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.cookie.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.i18n.properties.min.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.iframe-transport.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/jquery.fileupload.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/wave.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/mqttws.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/qwebchannel.js" type="text/javascript"></script><!--<![endif]-->
+    <!--[if (lte IE 9)]>
+    <script src="./assets/js/vendor/old-ie/jquery-1.9.0.js"></script>
+    <script src="./assets/js/vendor/old-ie/html5shiv.js"></script>
+    <script src="./assets/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->
+    <script src="./assets/js/vendor.min.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+    <script src="./assets/js/app.min.js" type="text/javascript"></script>
+    <script src="./assets/js/ajax.js" type="text/javascript"></script>
+  </body>
+  <script src="./assets/js/vendor/html5media.min.js"></script>
+  <script>
+    var slaver;
+    $.ajax({
+      url: _ajaxLink + "?c=common&m=getServerAddress",
+      type: "GET",
+      async: false,
+      dataType: "json",
+      success: function(data){
+        slaver = document.location.protocol+ '//' + data.slaver
+      }
+    })
+    $.ajax({
+      url: _ajaxLink + "?c=common&m=listVideoProcess",
+      type: "GET",
+      async: false,
+      dataType: "json",
+      success: function(data){
+        if(data.state == 1){
+          var str = ""
+          $.each(data.ret, function (k, n) {
+            str += "<div class='c-notice__videoItem'>"
+            str += "<div class='videoBlock'>"
+            str += "<div class='commonVideo' style='background-image:url(./assets/img/video.png)'></div>"
+            str += "<p>"+ n.name +"</p>"
+            str += "<div class='c-notice__effect' data-lang='string_transcoding'></div>"
+            str += "</div></div>"
+          })
+          $('#noticeTable_video .c-notice--items--upload').html(str)
+          allLanguageRender()
+        }
+      }
+    })
+    
+    getNoticeImage(1)
+    getNoticeVideo(1)
+    getNoticeText(1)
+    
+    function getNoticeImage(index){
+      page = index ? index : page;
+      $.ajax({
+        url: _ajaxLink + "?c=Announcement&m=listAnnouncement&page="+ page + "&rpp=20&type=0",
+        type: "GET",
+        dataType: "json",
+        async: false,
+        success: function(data){
+          if (data.state == 1 && data.ret != '') {
+            var str = "";
+            $.each(data.ret, function (k, n) {
+              var content = n.content
+              content = content.split('/')
+              content = content[content.length - 1]
+              content = content.split('.')
+              content = content[0]
+              var target = []
+              for (var i = 0; i < n.target.length; i++) {
+                var id = n.target[i].id
+                target.push(id)
+              }
+              target = target.join(',')
+              str += "<div class='c-notice__imageItem' data-target='"+ target +"' data-id='"+ n.id +"' data-content='"+ n.content +"' data-datetime='"+ n.datetime +"' data-deadline='"+ n.deadline +"' data-author='"+ n.author +"' data-status='"+ n.status +"'>"
+              str += "<img onclick='editNoticeImagePopup(this)' src='"+ n.content +"' alt='"+ content +"'>"
+              if (n.status == 0) {
+                str += "<p>"+ content +"</p>"
+                str += "<div class='c-notice__effect' data-lang='string_text28'></div>"
+              }else if(n.status == 1){
+                str += "<p style='color:#888'>"+ content +"</p>"
+              }
+              str += "</div>"
+            })
+            $("#noticeTable_image .c-notice--items").html(str)
+            singleRender('string_text28')
+            getPagiation(data.total,$("#noticeTable_image .pagination"),'getNoticeImage',page);
+          }else if (data.state == 1 && data.ret == ''){
+            $("#noticeTable_image").hide()
+            $("#noticeTable_image .pagination").html('')
+          }
+        }
+      })
+    }
+    function getNoticeVideo(index){
+      page = index ? index : page;
+      $.ajax({
+        url: _ajaxLink + "?c=Announcement&m=listAnnouncement&page="+ page + "&rpp=20&type=1",
+        type: "GET",
+        dataType: "json",
+        async: false,
+        success: function(data){
+          if (data.state == 1 && data.ret != '') {
+            var str = "";
+            $.each(data.ret, function (k, n) {
+              var content = n.content
+              content = content.split('/')
+              content = content[content.length - 1]
+              content = content.split('.')
+              content = content[0]
+              var target = []
+              for (var i = 0; i < n.target.length; i++) {
+                var id = n.target[i].id
+                target.push(id)
+              }
+              target = target.join(',')
+              str += "<div class='c-notice__videoItem' data-target='"+ target +"' data-id='"+ n.id +"' data-content='"+ n.content +"' data-datetime='"+ n.datetime +"' data-deadline='"+ n.deadline +"' data-author='"+ n.author +"' data-status='"+ n.status +"'>"
+              str += "<div class='videoBlock' onclick='editNoticeVideoPopup(this)'>"
+              if (!n.thumb || n.thumb == null) {
+                str += "<div class='commonVideo' style='background-image:url(./assets/img/video.png)'></div>"
+              }else{
+                str += "<div class='commonVideo' style='background-image:url("+ slaver + n.thumb +");background-size:cover;'></div>"
+              }
+              str += "<div class='commonPlay' style='background-image:url(./assets/img/play.png)'></div>"
+              //str += "<video onclick='editNoticeVideoPopup(this)' src='"+ n.content +"'></video>"
+              if (n.status == 0) {
+                str += "<p>"+ n.name +"</p>"
+                str += "<div class='c-notice__effect' data-lang='string_text28'></div>"
+              }else if(n.status == 1){
+                str += "<p style='color:#888'>"+ n.name +"</p>"
+              }
+              str += "</div></div>"
+            })
+            $("#noticeTable_video .c-notice--items").html(str)
+            getPagiation(data.total,$("#noticeTable_video .pagination"),'getNoticeVideo',page);
+            allLanguageRender()
+          }else if (data.state == 1 && data.ret == ''){
+            if ($('#noticeTable_video .c-notice--items--upload').html() != '') {
+              $("#noticeTable_video").show()
+            }else{
+              $("#noticeTable_video").hide()
+            }
+            $("#noticeTable_video .pagination").html('')
+          }
+        }
+      })
+    }
+    function getNoticeText(index){
+      page = index ? index : page;
+      $.ajax({
+        url: _ajaxLink + "?c=Announcement&m=listAnnouncement&page="+ page + "&rpp=20&type=2",
+        type: "GET",
+        dataType: "json",
+        async: false,
+        success: function(data){
+          if (data.state == 1 && data.ret != '') {
+            var str = "";
+            $.each(data.ret, function (k, n) {
+              var content;
+              var overdue;
+              var type;
+              var target = []
+              for (var i = 0; i < n.target.length; i++) {
+                var id = n.target[i].id
+                target.push(id)
+              }
+              target = target.join(',')
+              if(n.status == 0){
+                if (tem_lang == 'zh') {
+                  overdue = '未过期'
+                }else if (tem_lang == 'en') {
+                  overdue = 'No overdue'
+                }else if (tem_lang == 'hk') {
+                  overdue = '未過期'
+                }
+                str += "<tr>";
+              }else if (n.status == 1){
+                if (tem_lang == 'zh') {
+                  overdue = '过期'
+                }else if (tem_lang == 'en') {
+                  overdue = 'Overdue'
+                }else if (tem_lang == 'hk') {
+                  overdue = '過期'
+                }
+                str += "<tr class='childColorGary'>";
+              }
+              str += "<td data-val='content'>"+ n.content +"</td>"
+              str += "<td data-val='datetime'>"+ n.datetime +"</td>"
+              str += "<td data-val='deadline'>"+ n.deadline +"</td>"
+              str += "<td data-val='overdue'>"+ overdue +"</td>"
+              str += "<td data-val='author'>"+ n.author +"</td>"
+              str += "<td><a class='f-info' data-target='"+ target +"' data-id='"+ n.id +"' onclick='showThisNotice(this)'><i class='fa fa-info-circle'></i></a>"
+              str += "</td>"
+              //str += "<a class='f-delete' data-id='"+n.id+"' onclick='deleteThisNotice(this)'><i class='fa fa-trash'></i></a></td>"
+              str += "</tr>";
+            })
+            $("#noticeTable_text tbody").html(str)
+            getPagiation(data.total,$("#noticeTable_text .pagination"),'getNoticeText',page);
+          }else if (data.state == 1 && data.ret == ''){
+            $("#noticeTable_text").hide()
+            $("#noticeTable_text .pagination").html('')
+          }
+        }
+      })
+    }
+    
+    //image popup function
+    $('#popup__noticeImageEdit .button--orange').click(function(){
+      var id = $(this).attr('data-id')
+      window.location.href='./notice_image.html?id=' + id
+    })
+    $('#popup__noticeImageEdit .button--red').click(function(){
+      var id = $(this).attr('data-id')
+      removeNoticeRecord(id, 0)
+    })
+    
+    //video popup function
+    $('#popup__noticeVideoEdit .button--red').click(function(){
+      var id = $(this).attr('data-id')
+      removeNoticeRecord(id, 1)
+    })
+    
+    //text popup function
+    $('#popup__noticeTextEdit .button--orange').click(function(){
+      var id = $(this).attr('data-id')
+      window.location.href='./notice_text.html?id=' + id
+    })
+    $('#popup__noticeTextEdit .button--red').click(function(){
+      var id = $(this).attr('data-id')
+      removeNoticeRecord(id, 2)
+    })
+    
+    function editNoticeImagePopup(obj){
+      $('#popup__noticeImageEdit').addClass('is-active')
+      var that = $(obj).parent()
+      var id = that.attr('data-id')
+      var content = that.attr('data-content')
+      var datetime = that.attr('data-datetime')
+      var deadline = that.attr('data-deadline')
+      var author = that.attr('data-author')
+      var status = that.attr('data-status')
+      var target = that.attr('data-target')
+      if (status == 0) {
+        if (tem_lang == 'zh') {
+          status = '未过期'
+        }else if (tem_lang == 'en') {
+          status = 'No overdue'
+        }else if (tem_lang == 'hk') {
+          status = '未過期'
+        }
+        $('#popup__noticeImageEdit .button--orange').show()
+      }else{
+        if (tem_lang == 'zh') {
+          status = '过期'
+        }else if (tem_lang == 'en') {
+          status = 'Overdue'
+        }else if (tem_lang == 'hk') {
+          status = '過期'
+        }
+        $('#popup__noticeImageEdit .button--orange').hide()
+      }
+      $('#popup__noticeImageEdit .c-notice__imagePop--left img').attr('src', content)
+      $('#popImageNoticeDate').html(datetime)
+      $('#popImageDeadline').html(deadline)
+      $('#popImageOverdue').html(status)
+      $('#popImageAuthor').html(author)
+      $('#popImageDevice').attr('data-target', target)
+      $('#popup__noticeImageEdit .c-popup__button .button').attr('data-id', id)
+    }
+    
+    function editNoticeVideoPopup(obj){
+      var that = $(obj).parent()
+      var id = that.attr('data-id')
+      var content = that.attr('data-content')
+      var datetime = that.attr('data-datetime')
+      var deadline = that.attr('data-deadline')
+      var author = that.attr('data-author')
+      var status = that.attr('data-status')
+      var target = that.attr('data-target')
+      if (status == 0) {
+        if (tem_lang == 'zh') {
+          status = '未过期'
+        }else if (tem_lang == 'en') {
+          status = 'No overdue'
+        }else if (tem_lang == 'hk') {
+          status = '未過期'
+        }
+      }else{
+        if (tem_lang == 'zh') {
+          status = '过期'
+        }else if (tem_lang == 'en') {
+          status = 'Overdue'
+        }else if (tem_lang == 'hk') {
+          status = '過期'
+        }
+      }
+      if(getCookie('c_deviceid') != ''){
+        $('.showOnQt').show()
+        $('.showOnPC').hide()
+        $('#popup__noticeVideoEdit #popVideoPlay').attr('data-src', slaver + content)
+      }else{
+        $('.showOnQt').hide()
+        $('.showOnPC').show()
+        $('#popup__noticeVideoEdit .c-notice__videoPop video').attr('src', slaver + content)
+      }
+      $('#popVideoNoticeDate').html(datetime)
+      $('#popVideoDeadline').html(deadline)
+      $('#popVideoOverdue').html(status)
+      $('#popVideoAuthor').html(author)
+      $('#popVideoDevice').attr('data-target', target)
+      $('#popup__noticeVideoEdit .c-popup__button .button').attr('data-id', id)
+      $('#popup__noticeVideoEdit').addClass('is-active')
+      
+    }
+    
+    function showThisNotice(obj){
+      var that = $(obj).parent().parent()
+      var id = $(obj).attr('data-id')
+      var content = that.find("td[data-val='content']").html()
+      var datetime = that.find("td[data-val='datetime']").html()
+      var deadline = that.find("td[data-val='deadline']").html()
+      var overdue = that.find("td[data-val='overdue']").html()
+      var author = that.find("td[data-val='author']").html()
+      var target = $(obj).attr('data-target')
+      if (overdue == '过期' || overdue == 'Overdue' || overdue == '過期') {
+        $('#popup__noticeTextEdit .button--orange').hide()
+      }else{
+        $('#popup__noticeTextEdit .button--orange').show()
+      }
+      $('#popTextContent').html(content)
+      $('#popTextNoticeDate').html(datetime)
+      $('#popTextDeadline').html(deadline)
+      $('#popTextOverdue').html(overdue)
+      $('#popTextAuthor').html(author)
+      $('#popTextDevice').attr('data-target', target)
+      $('#popup__noticeTextEdit').addClass('is-active')
+      $('#popup__noticeTextEdit .button').attr('data-id', id)
+    }
+    
+    //remove function
+    function removeNoticeRecord(id, type){
+      var id = id;
+      var type = type;
+      $.ajax({
+        url: _ajaxLink + "?c=Announcement&m=removeAnnouncement",
+        type: "POST",
+        data:{
+          id: id
+        },
+        dataType: "json",
+        success: function(data){
+          if(data.state==1){
+            if (type == 0) {
+              getNoticeImage(1)
+            }else if (type == 1) {
+              getNoticeVideo(1)
+            }else if (type == 2) {
+              getNoticeText(1)
+            }
+            $('.c-popup').removeClass('is-active')
+          }
+        }
+      })
+    }
+    $('#popup__noticeVideoEdit .f-close').click(function(){
+      $('#popup__noticeVideoEdit video').attr('src','')
+    })
+    
+    $('#popImageDevice,#popVideoDevice,#popTextDevice').click(function(){
+      var content = $(this).attr('data-target')
+      var outdoor = []
+      var guard = []
+      content = content.split(',')
+      for (var i = 0; i < content.length; i++) {
+        var a = content[i]
+        var building = a[2] + a[3] + a[4]
+        var block = a[5] + a[6]
+        var number = a[7] + a[8] + a[9] + a[10]
+        if (tem_lang == 'zh') {
+          var device = '<p>' + building + '栋' + block + '单元' + number + '号</p>' 
+        }else if (tem_lang == 'en') {
+          var device = '<p>No.' + number + ' Blk' + block + ' Bld' + building + '</p>'
+        }else if (tem_lang == 'hk') {
+          var device = '<p>' + building + '棟' + block + '單元' + number + '號</p>'
+        }
+        if (a[1] == '2') {
+          outdoor.push(device)
+        }else if (a[1] == '7') {
+          guard.push(device)
+        }
+      }
+      outdoor = outdoor.join('')
+      guard = guard.join('')
+      if (outdoor != '') {
+        $('.c-popup__target .c-popup__outdoor--list').html(outdoor)
+        $('.c-popup__target .c-popup__outdoor').show()
+      }else{
+        $('.c-popup__target .c-popup__outdoor').hide()
+      }
+      if (guard != '') {
+        $('.c-popup__target .c-popup__guard--list').html(guard)
+        $('.c-popup__target .c-popup__guard').show()
+      }else{
+        $('.c-popup__target .c-popup__guard').hide()
+      }
+      $('#popup__target').addClass('is-active')
+    })
+    
+    $('.f-onlyclose').click(function(){
+      $('#popup__target').removeClass('is-active')
+    })
+    
+    $('#popVideoPlay p').click(function(){
+      var content = $(this).parent().attr('data-src')
+      new QWebChannel(qt.webChannelTransport, function(channel) {
+        var interactObj = channel.objects.interactObject;
+        interactObj.hqBulletin_showVideo(content);
+      });
+    })
+  </script>
+</html>

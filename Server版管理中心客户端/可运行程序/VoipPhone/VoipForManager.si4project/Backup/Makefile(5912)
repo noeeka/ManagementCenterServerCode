@@ -1,0 +1,47 @@
+CC := g++
+C_OR_CPP=cpp
+PJLIB :=/home/yonhan/pjsip2.7.1
+#FFMPEG:=/home/tianyh/ffmpeg-arm
+
+DATE          = -DBUILD_DATE="\"`date '+%Y-%m-%d %H:%M:%S'`"\"
+#REV           = -DREV="\"`git log | grep commit | head -1  | awk '{print $2}'`"\"
+#REV           = -DREV=""
+###############################################################################
+# Gather all flags.
+#
+CFLAGS =  -I$(PJLIB)/include -DPJ_AUTOCONF=1	-O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1 -Wall
+
+
+LDFLAGS= -L${PJLIB}/lib  -lpjsua2-i686-pc-mingw32 -lstdc++ -lpjsua-i686-pc-mingw32 -lpjsip-ua-i686-pc-mingw32 -lpjsip-simple-i686-pc-mingw32 -lpjsip-i686-pc-mingw32 -lpjmedia-codec-i686-pc-mingw32 -lpjmedia-i686-pc-mingw32 -lpjmedia-videodev-i686-pc-mingw32 -lpjmedia-audiodev-i686-pc-mingw32 -lpjmedia-i686-pc-mingw32 -lpjnath-i686-pc-mingw32 -lpjlib-util-i686-pc-mingw32  -lsrtp-i686-pc-mingw32 -lresample-i686-pc-mingw32 -lgsmcodec-i686-pc-mingw32 -lspeex-i686-pc-mingw32 -lilbccodec-i686-pc-mingw32 -lg7221codec-i686-pc-mingw32 -lwebrtc-i686-pc-mingw32  -lpj-i686-pc-mingw32 -lm -lwinmm -lole32 -lws2_32 -lwsock32 -lpthread
+#LDFLAGS+= -L$(FFMPEG)/lib -lavdevice -lavformat -lavcodec -lswscale -lavutil -lx264
+
+###############################################################################
+# Defines for building PJSUA
+#
+OBJ=$(shell pwd)
+SRCDIR = $(shell  pwd)
+PJSUA_SRCDIR = $(wildcard ${SRCDIR}/*.$(C_OR_CPP))
+
+
+
+PJSUA_OBJS = $(patsubst %.$(C_OR_CPP),${OBJ}/%.o,$(notdir ${PJSUA_SRCDIR}))
+
+
+
+PJSUA_EXE=pjsua
+
+
+
+
+TARGET = $(PJSUA_EXE) 
+
+
+${TARGET}: ${PJSUA_OBJS}
+	$(CC) $(PJSUA_OBJS) ${LDFLAGS} ${CFLAGS} -o $@
+	#scp $@ root@192.168.1.188:
+
+${OBJ}/%.o:${SRCDIR}/%.$(C_OR_CPP)
+	$(CC) $(DATE)  $(CFLAGS) $(LDFLAGS) -c $< -o $@
+.PHONY:clean
+clean:
+	@rm -rf *.o
